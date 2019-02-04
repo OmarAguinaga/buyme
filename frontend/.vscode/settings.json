@@ -4,5 +4,9 @@
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
     "titleBar.inactiveBackground": "#FFC600CC"
-  }
+  },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "git.ignoreLimitWarning": true
 }
