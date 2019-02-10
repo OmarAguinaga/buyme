@@ -6,7 +6,7 @@ import NProgress from 'nprogress'
 import Nav from './Nav'
 
 Router.events.on('routeChangeStart', () => {
-  NProgress.start();
+  NProgress.start()
 })
 Router.events.on('routeChangeComplete', () => {
   NProgress.done()
@@ -30,7 +30,7 @@ const Logo = styled.h1`
     text-decoration: none;
   }
 
-  @media(max-width: 1300px) {
+  @media (max-width: 1300px) {
     margin: 0;
     text-align: center;
   }
@@ -53,7 +53,7 @@ const StyledHeader = styled.header`
     grid-template-columns: 1fr auto;
     border-bottom: 1px solid ${props => props.theme.lightgrey};
   }
-`;
+`
 
 const Header = () => (
   <StyledHeader>
@@ -70,6 +70,6 @@ const Header = () => (
     </div>
     <div>Cart</div>
   </StyledHeader>
-);
+)
 
 export default Header
