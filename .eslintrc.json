@@ -71,10 +71,6 @@
       "error",
       "always"
     ],
-    "computed-property-spacing": [
-      "error",
-      "always"
-    ],
     "import/prefer-default-export": 0,
     "import": 0,
     "func-names": 0,
