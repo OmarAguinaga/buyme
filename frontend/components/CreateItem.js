@@ -26,7 +26,7 @@ const CREATE_ITEM_MUTATION = gql`
   }
 `
 
-export class CreateItems extends Component {
+export class CreateItem extends Component {
   state = {
     title: 'Cool shoes',
     description: 'Some pretty cool shoes',
@@ -146,5 +146,5 @@ export class CreateItems extends Component {
   }
 }
 
-export default CreateItems
+export default CreateItem
 export { CREATE_ITEM_MUTATION }

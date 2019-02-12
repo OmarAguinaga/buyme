@@ -1,6 +1,6 @@
 import App, { Container } from 'next/app'
-import Page from '../components/Page'
 import { ApolloProvider } from 'react-apollo'
+import Page from '../components/Page'
 import withData from '../lib/withData'
 
 class myApp extends App {
@@ -11,6 +11,7 @@ class myApp extends App {
     }
     // this exposes the query to the user
     pageProps.query = ctx.query
+    return { pageProps }
   }
 
   render() {
@@ -20,7 +21,7 @@ class myApp extends App {
       <Container>
         <ApolloProvider client={apollo}>
           <Page>
-            <Component {...pageProps}></Component>
+            <Component {...pageProps} />
           </Page>
         </ApolloProvider>
       </Container>
