@@ -28,11 +28,11 @@ const CREATE_ITEM_MUTATION = gql`
 
 export class CreateItem extends Component {
   state = {
-    title: 'Cool shoes',
-    description: 'Some pretty cool shoes',
-    image: 'shopw.jpg',
-    largeImage: 's.jpg',
-    price: 1200,
+    title: '',
+    description: '',
+    image: '',
+    largeImage: '',
+    price: 0,
   }
 
   handleChange = e => {
@@ -42,7 +42,6 @@ export class CreateItem extends Component {
   }
 
   uploadFile = async e => {
-    console.log('uplosading file')
     const { files } = e.target
     const data = new FormData()
     data.append('file', files[0])
@@ -57,7 +56,6 @@ export class CreateItem extends Component {
     )
 
     const file = await res.json()
-    console.log(file)
     this.setState({
       image: file.secure_url,
       largeImage: file.eager[0].secure_url,
