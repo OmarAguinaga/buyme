@@ -6,3 +6,5 @@ haters/
 .build/
 layout.md
 variables.env
+frontend/__tests__/mocking.test.js
+frontend/__tests__/sample.test.js
